@@ -1,11 +1,16 @@
 <template>
   <div class="goods">
-    <van-swipe class="goods-swipe" :autoplay="3000">
+    <!-- <van-swipe class="goods-swipe" :autoplay="3000">
       <van-swipe-item v-for="thumb in goods.thumb" :key="thumb">
         <img :src="thumb" >
       </van-swipe-item>
-    </van-swipe>
-
+    </van-swipe> -->
+    <van-button type="primary">
+      我是按钮
+    </van-button>
+    <van-button type="default">
+      我是按钮
+    </van-button>
     <van-cell-group>
       <van-cell>
         <div class="goods-title">{{ goods.title }}</div>
@@ -60,7 +65,8 @@ import {
   SwipeItem,
   GoodsAction,
   GoodsActionIcon,
-  GoodsActionButton
+  GoodsActionButton,
+  Button,
 } from 'vant';
 
 export default {
@@ -74,7 +80,8 @@ export default {
     [SwipeItem.name]: SwipeItem,
     [GoodsAction.name]: GoodsAction,
     [GoodsActionIcon.name]: GoodsActionIcon,
-    [GoodsActionButton.name]: GoodsActionButton
+    [GoodsActionButton.name]: GoodsActionButton,
+    [Button.name]: Button
   },
 
   data() {
