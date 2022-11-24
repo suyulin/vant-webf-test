@@ -51,6 +51,22 @@ const routes = [
       title: 'Layout',
     },
   },
+   {
+    name: 'popup',
+    path: '/popup',
+    component: () => import('./view/components/popup'),
+    meta: {
+      title: 'Popup',
+    },
+  },
+   {
+    name: 'space',
+    path: '/space',
+    component: () => import('./view/components/space'),
+    meta: {
+      title: 'Space',
+    },
+  },
 ];
 
 const router = createRouter({
