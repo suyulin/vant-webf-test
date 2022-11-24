@@ -19,6 +19,14 @@ const routes = [
       title: 'Button',
     },
   },
+    {
+    name: 'icon',
+    path: '/icon',
+    component: () => import('./view/components/icon'),
+    meta: {
+      title: 'Icon',
+    },
+  },
 ];
 
 const router = createRouter({

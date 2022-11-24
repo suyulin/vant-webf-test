@@ -1,10 +1,39 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import { router } from './router';
-import { Button,Cell,Switch, CellGroup,Col,Row,Popup,Space,Toast,Calendar, Swipe,SwipeItem, CountDown,Dialog ,Checkbox,CheckboxGroup,DatetimePicker,Collapse,CollapseItem  ,Field, Form,NumberKeyboard,Picker,Radio,RadioGroup} from 'vant';
+import {
+  Button,
+  Calendar,
+  Cell,
+  CellGroup,
+  Checkbox,
+  CheckboxGroup,
+  Col,
+  Collapse,
+  CollapseItem,
+  CountDown,
+  DatetimePicker,
+  Dialog,
+  Field,
+  Form,
+  NumberKeyboard,
+  Picker,
+  Popup,
+  Radio,
+  RadioGroup,
+  Row,
+  Space,
+  Swipe,
+  SwipeItem,
+  Switch,
+  Toast,
+  Tab,
+  Tabs
+} from 'vant';
 import 'vant/es/toast/style';
 import DemoBlock from "@/view/mobile/components/DemoBlock";
 import DemoSection from "@/view/mobile/components/DemoSection";
+
 const app = createApp(App);
 app.use(router);
 app.use(Button);
@@ -31,6 +60,8 @@ app.use(Collapse);
 app.use(CollapseItem);
 app.use(CountDown);
 app.use(Swipe);
+app.use(Tab);
+app.use(Tabs);
 app.use(SwipeItem);
 app.component(DemoBlock.name, DemoBlock);
 app.component(DemoSection.name, DemoSection);
