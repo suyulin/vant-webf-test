@@ -2,34 +2,21 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
   {
-    name: 'notFound',
-    path: '/:path(.*)+',
+    name: '/',
+    path: '/',
     redirect: {
-      name: 'goods',
+      name: 'button',
+    },
+    meta: {
+      title: 'Home',
     },
   },
   {
-    name: 'user',
-    path: '/user',
-    component: () => import('./view/user'),
+    name: 'button',
+    path: '/button',
+    component: () => import('./view/components/button'),
     meta: {
-      title: '会员中心',
-    },
-  },
-  {
-    name: 'cart',
-    path: '/cart',
-    component: () => import('./view/cart'),
-    meta: {
-      title: '购物车',
-    },
-  },
-  {
-    name: 'goods',
-    path: '/goods',
-    component: () => import('./view/goods'),
-    meta: {
-      title: '商品详情',
+      title: 'Button',
     },
   },
 ];
