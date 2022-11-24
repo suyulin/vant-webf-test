@@ -19,12 +19,36 @@ const routes = [
       title: 'Button',
     },
   },
-    {
+  {
     name: 'icon',
     path: '/icon',
     component: () => import('./view/components/icon'),
     meta: {
       title: 'Icon',
+    },
+  },
+  {
+    name: 'cell',
+    path: '/cell',
+    component: () => import('./view/components/cell'),
+    meta: {
+      title: 'Cell',
+    },
+  },
+  {
+    name: 'image',
+    path: '/image',
+    component: () => import('./view/components/image'),
+    meta: {
+      title: 'Image',
+    },
+  },
+   {
+    name: 'layout',
+    path: '/layout',
+    component: () => import('./view/components/layout'),
+    meta: {
+      title: 'Layout',
     },
   },
 ];
