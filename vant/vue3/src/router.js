@@ -99,6 +99,14 @@ const routes = [
       title: 'Checkbox',
     },
   },
+        {
+    name: 'datetimePicker',
+    path: '/datetimePicker',
+    component: () => import('./view/components/datetimePicker'),
+    meta: {
+      title: 'datetimePicker',
+    },
+  },
 ];
 
 const router = createRouter({
