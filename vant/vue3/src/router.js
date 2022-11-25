@@ -43,7 +43,7 @@ const routes = [
       title: 'Image',
     },
   },
-   {
+  {
     name: 'layout',
     path: '/layout',
     component: () => import('./view/components/layout'),
@@ -51,7 +51,7 @@ const routes = [
       title: 'Layout',
     },
   },
-   {
+  {
     name: 'popup',
     path: '/popup',
     component: () => import('./view/components/popup'),
@@ -59,12 +59,44 @@ const routes = [
       title: 'Popup',
     },
   },
-   {
+  {
     name: 'space',
     path: '/space',
     component: () => import('./view/components/space'),
     meta: {
       title: 'Space',
+    },
+  },
+  {
+    name: 'toast',
+    path: '/toast',
+    component: () => import('./view/components/toast'),
+    meta: {
+      title: 'Toast',
+    },
+  },
+  {
+    name: 'overlay',
+    path: '/overlay',
+    component: () => import('./view/components/overlay'),
+    meta: {
+      title: 'Overlay',
+    },
+  },
+    {
+    name: 'transition',
+    path: '/transition',
+    component: () => import('./view/components/transition'),
+    meta: {
+      title: 'Transition',
+    },
+  },
+      {
+    name: 'checkbox',
+    path: '/checkbox',
+    component: () => import('./view/components/checkbox'),
+    meta: {
+      title: 'Checkbox',
     },
   },
 ];
